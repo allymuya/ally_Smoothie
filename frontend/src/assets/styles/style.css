@@ -156,7 +156,7 @@ li {
 .order .quantity {
   width: 0%;
   position: relative;
-  right: 36%;
+  /* right: 36%; */
 }
 .order .item-price {
   width: 1%;
@@ -168,6 +168,12 @@ li {
 }
 .item-name1 {
   border-top: 1px solid #48597b;
+}
+.quantity1 {
+  width: 0%;
+  position: relative;
+  border-top: 1px solid #48597b;
+  /* right: 36%; */
 }
 
 .form input {
