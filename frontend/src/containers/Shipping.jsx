@@ -114,7 +114,7 @@ const Shipping = () => {
               ))}
           <tr class="finalprice">
             <td class= "item-name1">Total price</td>
-            <td class= "quantity">{totalitem}</td>
+            <td class= "quantity1">{totalitem}</td>
             <td class="item-price">${subtotal}</td>
           </tr>
           <br />
