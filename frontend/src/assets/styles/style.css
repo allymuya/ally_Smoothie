@@ -5,33 +5,33 @@ Common
   margin: 0;
 }
 html {
-  font-family: "Raleway";
-}
-body {
-  background-color: #48597b;
+  font-family: "Roboto";
 }
 
 /* *********************
 Header
 ************************* */
 .nav {
-  background-color: #48597b;
+  background-color: #C8DD66;
   width: 100%;
-  color: white;
+  color: black;
   border: #707070;
 }
 .nav .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 5px;
+  padding: 10px;
 }
 
 .nav .navbar h3 {
-  font-family: "Krungthep";
-  color: white;
+  font-family: "Roboto";
+  color: black;
+  /* margin-top: 1%; */
   font-size: 30px;
   margin-left: 1%;
+}
+.nav .navbar h3 img{
+  height: 30px;
 }
 
 .nav .navbar .signin {
@@ -41,33 +41,30 @@ Header
 .nav .navbar .signin h4 {
   padding: 0 15px;
   font-family: "Roboto";
-  font-weight: lighter;
-}
-.signin img {
-  height: 35px;
-}
-.bg{
-  background-color: #48597b;
+  font-weight: bold;
 }
 
+a.sign {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.signin img {
+  height: 30px;
+  padding-left: 10px;
+}
+.bg{
+  background-color: #F1F5CC;
+}
 .bg img {
   width: 100%;
-  
-}
-.logout {
-  padding-right: 17px;
-  cursor: pointer;
-}
-.sign {
-  text-decoration: none;
-  color: #4a4a4a;
 }
 /**********************
 Home Page
 **************************/
 
 .main {
-  background-color: #48597b;
+  background-color: #F1F5CC;
 }
 li {
   list-style: none;
@@ -90,7 +87,7 @@ li {
 .name {
   font-size: 23px;
   margin-left: 2%;
-  color: white;
+  color: black;
 }
 .add {
   display: flex;
@@ -99,24 +96,24 @@ li {
 .prize {
   font-size: 20px;
   margin-left: 2%;
-  color: white;
+  color: black;
 }
 .btn {
-  border: 1px solid white;
+  border: 1px solid black;
   font-size: 20px;
   padding: 5px 15px;
   color: black;
-  background-color: white;
+  background-color: #C8DD66;
   margin-right: 10%;
   border-radius: 6px;
   cursor: pointer;
 }
 .number {
-  border: 1px solid white;
+  border: 1px solid black;
   font-size: 20px;
   padding: 4px 17px;
   color: black;
-  background-color: white;
+  background-color: #C8DD66;
   margin-right: 10%;
   border-radius: 6px;
   cursor: pointer;
@@ -128,25 +125,20 @@ li {
 
 .heading {
   width: 100%;
-  background-color: #8e91b2;
+  background-color: #F7EE61;
   text-align: center;
 }
 .heading h4 {
-  color: white;
+  color: black;
   font-size: 30px;
   padding: 4%;
 }
 .formcolor{
-  background-color: white !important;
-  bottom: 0;
+  background-color: #F1F5CC;
 }
 .form {
-  
   font-family: "Roboto", sans-serif;
   margin-left: 20%;
-}
-.form .total h3{
-  padding-top: 20px;
 }
 .order table {
   margin: 0;
@@ -176,25 +168,23 @@ li {
 }
 .item-name1 {
   border-top: 1px solid #48597b;
-  width: 60%;
 }
-
 
 .form input {
   width: 45%;
-  background-color: #8e91b2;
+  background-color: white;
   padding: 5px;
-  border: 0;
+  border: 1px solid black
 }
 ::placeholder {
-  color: white;
+  color: gray;
 }
 
 .form button {
   margin-top: 2%;
-  background-color: #48597b;
+  background-color: #C8DD66;
   border-radius: 5%;
-  color: white;
+  color: black;
   border: 0;
   padding: 11px;
   border-radius: 9px;
@@ -214,18 +204,14 @@ li {
 }
 .btn3 {
   border-color: #48597b;
-  background-color: #48597b;
-  color: white;
+  background-color: #C8DD66;
+  color: black;
   position: relative;
   border-radius: 0.25rem;
   height: 40px;
   left: 44%;
   cursor: pointer;
   border: 0;
-}
-.color{
-  color: #48597b;
-  font-weight: bold;
 }
 
 /* ***************
@@ -235,15 +221,17 @@ footer {
   font-family: "Roboto", sans-serif;
   position: sticky;
   bottom: 0;
+  left: 0%;
   display: flex;
   justify-content: flex-end;
   padding: 10px 0px;
-  background-color: #48597b;
+  background-color: #C8DD66;
   border-top: 1px solid #939393;
+  width: 100%;
 }
 
 footer .subtotal {
-  color: white;
+  color: black;
   font-size: 20px;
   line-height: 50px;
   font-weight: bold;
@@ -252,13 +240,13 @@ footer .subtotal {
 footer button {
   margin-right: 20px;
   margin-left: 20px;
-  background-color: white;
+  background-color: #F8F064;
   color: black;
   border: 0;
   padding: 8px 15px;
   font-size: 20px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 25px;
 }
 /* ***************************************
 
@@ -276,7 +264,7 @@ Signin and Signup
   z-index: 2;
 }
 .popup .popup-inner {
-  background-color: #48597b;
+  background-color: #F1F5CC;
   display: inline-block;
   text-align: center;
   position: relative;
@@ -286,21 +274,20 @@ Signin and Signup
   width: 30%;
   /* height: 45%; */
 }
-.popup .popup-inner img {
-  height: 10%;
-  position: absolute;
-  left: 85%;
-  justify-content: space-between;
-}
+
 .popup .popup-inner h1 {
-  font-family: "Krungthep";
+  font-family: "Roboto";
   font-weight: bold;
   top: 7%;
   position: relative;
-  color: white;
+  color: #C8DD66;
+  font-size: 30px;
+}
+.popup .popup-inner h1 img{
+  height: 30px;
 }
 .popup .popup-inner h2 {
-  color: white;
+  color: black;
   top: 6%;
   position: relative;
 }
@@ -323,17 +310,18 @@ Signin and Signup
 .popup .popup-input button {
   width: 73%;
   height: 5vh;
-  background-color: white;
+  background-color: #C8DD66;
   font-size: larger;
   border: 0;
   color: black;
 }
-.popup-input p {
-  color: white;
+.popup-input p{
+  color: black;
 }
-.popup-input p a {
-  color: white;
+.popup-input p a{
+  color: black;
 }
+
 
 /* ********************************************************************************* */
 @media (max-width: 1024px) {

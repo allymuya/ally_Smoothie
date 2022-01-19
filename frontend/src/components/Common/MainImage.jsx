@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Bg from "../../assets/img/Bg.jpeg";
+import Bg from "../../assets/img/Bg.png";
 import ImageCartLogo from "../../assets/img/cart.png";
 
 const MainImage = () => {

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { signUp } from "../reducks/users/operations";
-// import Cross from "../assets/img/cross.png";
+import Imageicon from "../assets/img/icon.png";
 import Home from "../containers/Home";
 import { push } from "connected-react-router";
-// import Melodium from "../assets/img/Melodium.svg";
 
 const SignUp = () => {
   const dispatch = useDispatch();
@@ -35,28 +34,55 @@ const SignUp = () => {
       <Home />
 
       <section class="popup">
-      
-      <div class="popup-inner">
-        <br/>
-        
-        <h1>BikesWay</h1>
-        <br/>
-        <h2>SIGN UP</h2>
-        <br/>
-        <div class="popup-input">
-          <input type="text" onChange={inputUserName} required placeholder="User-name" value={user_name} />
-          <br /><br />
-          <input type="email"  onChange={inputEmail} required placeholder="Email-address" value={email}  />
-          <br /><br />
-          <input type="password" onChange={inputPassword} required placeholder="Password" value={password} />
+        <div class="popup-inner">
           <br />
+          <h1>
+            Ally Smoothie
+            <img src={Imageicon} />
+          </h1>
+
           <br />
-          <button class="btn2" onClick={signUpButton} >Sign Up</button>
-          <br /><br />
-          <p>Already a Member? <a href="/Signin">Sign in</a></p>
+          <h2>SIGN UP</h2>
+          <br />
+          <div class="popup-input">
+            <input
+              type="text"
+              onChange={inputUserName}
+              required
+              placeholder="User-name"
+              value={user_name}
+            />
+            <br />
+            <br />
+            <input
+              type="email"
+              onChange={inputEmail}
+              required
+              placeholder="Email-address"
+              value={email}
+            />
+            <br />
+            <br />
+            <input
+              type="password"
+              onChange={inputPassword}
+              required
+              placeholder="Password"
+              value={password}
+            />
+            <br />
+            <br />
+            <button class="btn2" onClick={signUpButton}>
+              Sign Up
+            </button>
+            <br />
+            <br />
+            <p>
+              Already a Member? <a href="/Signin">Sign in</a>
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 };
